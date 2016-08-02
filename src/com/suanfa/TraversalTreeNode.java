@@ -4,6 +4,7 @@ package com.suanfa;
 /**
  * 遍历TreeNode
  * @author dell
+ * 主要应用尾递归
  *
  */
 
