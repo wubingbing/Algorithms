@@ -58,8 +58,71 @@ public class TraversalTreeNode {
              preorder_visit_depth(node.getRightNode(), depth);     
          }  
 
-        
      }   
+	
+	
+	/**
+	 * 求树的最大深度 《教科书上案例》
+	 * @param <T>
+	 */
+	
+	 public static <T> int maxDepth(TreeNode<T> node)   
+     {   
+         if (node == null)   
+         {   
+             return 0;   
+         }   
+         else   
+         {   
+             int leftdepth = maxDepth(node.getLeftNode());//递归计算左孩子的深度   
+             int rightdepth = maxDepth(node.getRightNode());//递归计算右孩子的深度  
+
+             if (leftdepth >= rightdepth)   
+             {   
+                 return leftdepth+1;  //先遍历左子树+1.
+             }   
+             else   
+             {   
+                 return rightdepth+1; //+1 是表示根节点  
+             }   
+         }   
+     }  
+
+
+	 /**
+	  * 根据递归原理，解析出树的深度
+	  * @param node
+	  * @param deep
+	  * @return
+	  */
+	 public static <T> int maxDeepLength(TreeNode<T> node,int deep)   
+     {   
+         if (node == null)   
+         {   
+             return deep;   
+         }   
+         else
+         {
+        	  deep++;
+        	  int leftMax = maxDeepLength(node.getLeftNode(), deep);
+        	  int rightMax =maxDeepLength(node.getRightNode(), deep);
+        	  
+        	  //递归完成后进行判断
+        	  
+        	  if(leftMax>=rightMax)
+        	  {
+        		  return leftMax;
+        	  }
+        	  else
+        	  {
+        		  return rightMax;
+        	  }
+            
+         }
+  
+     }  
+	 
+	 
 	
 	
 	/**
@@ -83,7 +146,7 @@ public class TraversalTreeNode {
 		
 		 TreeNode<String> init = init();  //得到树的根节点
 		 preorder_visit_depth(init,0);
-		
+		 System.out.println("maxDepth:"+maxDeepLength(init,0));   
 	}
 	
 
