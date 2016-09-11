@@ -122,7 +122,6 @@ public class TraversalTreeNode {
   
      }  
 	 
-	 
 	
 	
 	/**
@@ -142,12 +141,20 @@ public class TraversalTreeNode {
 	    	 System.out.println(markPoint+data.toString());
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		
 		 TreeNode<String> init = init();  //得到树的根节点
 		 preorder_visit_depth(init,0);
 		 System.out.println("maxDepth:"+maxDeepLength(init,0));   
 	}
+	
+	
+	/**
+	 * 给定一棵树，同时给出树中的两个结点(n1和n2)，求它们的最低公共祖先。也就是常见的LCA(Lowest Common Ancestor )问题。
+	 * 
+	 */
+	
 	
 
 }
