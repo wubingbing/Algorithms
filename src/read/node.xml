@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>   
+<root>
+  <sub type="dir">src</sub>
+  <sub type="dir">src\main</sub>
+  <sub type="dir">src\main\java</sub>
+  <sub type="dir">src\main\java\guojian</sub>
+  <sub type="dir">src\main\java\guojian\smart_snake</sub>
+  <sub type="file">src\main\java\guojian\smart_snake\APP.java</sub>
+  <sub type="file">src\main\java\guojian\smart_snake\Apple.java</sub>
+  <sub type="file">src\main\java\guojian\smart_snake\BSF.java</sub>
+  <sub type="dir">src\test</sub>
+  <sub type="dir">src\test\java</sub>
+  <sub type="dir">src\test\java\guojian</sub>
+  <sub type="dir">src\test\java\guojian\smart_snake</sub>
+  <sub type="file">src\test\java\guojian\smart_snake\APP.java</sub>
+  <sub type="file">src\test\java\guojian\smart_snake\Apple.java</sub>
+  <sub type="file">src\test\java\guojian\smart_snake\BSF.java</sub>
+  <sub type="dir">src\hello</sub>
+  <sub type="dir">bin</sub>
+  <sub type="dir">bin\main</sub>
+  <sub type="dir">bin\main\java</sub>
+  <sub type="dir">bin\main\java\guojian</sub>
+  <sub type="dir">bin\main\java\guojian\smart_snake</sub>
+  <sub type="file">bin\main\java\guojian\smart_snake\APP.java</sub>
+  <sub type="file">bin\main\java\guojian\smart_snake\Apple.java</sub>
+  <sub type="file">bin\main\java\guojian\smart_snake\BSF.java</sub>
+  <sub type="dir">bin\test</sub>
+  <sub type="dir">bin\test\java</sub>
+  <sub type="dir">bin\test\java\guojian</sub>
+  <sub type="dir">bin\test\java\guojian\smart_snake</sub>
+  <sub type="file">bin\test\java\guojian\smart_snake\APP.java</sub>
+  <sub type="file">bin\test\java\guojian\smart_snake\Apple.java</sub>
+  <sub type="file">bin\test\java\guojian\smart_snake\BSF.java</sub>
+  
+  
+  
+</root>
